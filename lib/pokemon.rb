@@ -10,5 +10,5 @@ class Pokemon
   end
   
   def self.save
-    
+    @db[:conn]
 end
