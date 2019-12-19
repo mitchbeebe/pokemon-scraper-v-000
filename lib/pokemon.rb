@@ -11,7 +11,7 @@ class Pokemon
   
   def self.save
     sql = <<-SQL
-      insert into pokemon
+      insert into pokemon ()
     SQL
     @db[:conn]
 end
