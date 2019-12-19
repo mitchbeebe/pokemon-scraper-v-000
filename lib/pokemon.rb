@@ -24,6 +24,6 @@ class Pokemon
       where id = ?
     SQL
     array = db.execute(sql, id)[0]
-    self.new(array[0], array[1], array[2])
+    self.new(array[0], array[1], array[2], db)
   end
 end
