@@ -17,12 +17,12 @@ class Pokemon
     db.execute(sql, name, type)
   end
   
-  def self.find(name)
+  def self.find(id, db)
     sql = <<-SQL
       select *
       from pokemon
-      where name = ?
+      where id = ?
     SQL
-    db.execute(sql, name)
+    db.execute(sql, id)
   end
 end
