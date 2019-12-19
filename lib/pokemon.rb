@@ -11,7 +11,7 @@ class Pokemon
   
   def self.save(name, type)
     sql = <<-SQL
-      insert into pokemon (id, name, type)
+      insert into pokemon (name, type)
       values (?, ?)
     SQL
     @db.execute(sql, @name, @type)
